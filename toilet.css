@@ -1,10 +1,10 @@
 @font-face {
 	font-family: "windows 95";
-	src: url(font/MS_Sans_Serif_8pt.ttf);
+	src: url('font/MS_Sans_Serif_8pt.ttf');
 }
 @font-face {	
 	font-family: "windows bold";
-	src: url(font/MS_Sans_Serif_8pt_bold.ttf);
+	src: url('font/MS_Sans_Serif_8pt_bold.ttf');
 }
 
 body {
