@@ -1,0 +1,136 @@
+@font-face {
+	font-family: "windows 95";
+	src: url("font/MS_Sans_Serif_8pt.ttf");
+}
+@font-face {	
+	font-family: "windows bold";
+	src: url(font/MS_Sans_Serif_8pt_bold.ttf);
+}
+
+body {
+	display: grid;
+	grid-template-columns: [col-start] 1fr [col-2] 1fr [col-end] ;
+	grid-auto-rows: 40px auto;
+	grid-template-areas: 
+	"h h"
+	"m1 m2";
+	background: #008282;
+	font-family: "windows 95", "MS Sans Serif","Microsoft MS Sans Serif", Futura, sans-serif;
+	font-size: 15px;
+	margin: 0px 3% 0px 3%;
+	cursor: url(images/cursor.png), progress;
+	border: 2px solid;
+	border-color: #fff #000 #000 #fff;
+
+}
+
+#notfunny {
+	cursor: none;
+}
+
+nav {
+	grid-area: h;
+	background: #000082;
+	letter-spacing: 1px;
+	border: 3px solid #c3c3c3;
+
+}
+
+nav a:link {
+	color: #ffffff;
+	text-decoration: none;
+	font-family: "windows bold", "windows 95", "MS Sans Serif", "Microsoft Ms Sans Serif", sans-serif;
+
+}
+
+nav a:visited {
+	color: #828282;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #f00;
+	text-decoration: none;
+	border-bottom: solid #f00;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 5px;
+	margin: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+nav ul li {
+	display: inline;
+	padding: 0px;
+}
+
+section#funny {
+	grid-area: m1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: #00ff00;
+	padding: 5px;
+	border-bottom: 3px solid #c3c3c3;
+	border-left: 3px solid #c3c3c3;
+}
+
+h1#headerf {
+	flex-basis: 100%;
+	text-align: center;
+	order: -1;
+}
+
+
+div.ending {
+	flex-basis: 100%;
+	text-align: center;
+	order: 1;
+}
+
+section#notfunny {
+	grid-area: m2;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-evenly;
+	background-color: #820000;
+	padding:  5px;
+	border-right: 3px solid #c3c3c3;
+	border-bottom: 3px solid #c3c3c3;
+	border-left: 3px solid #c3c3c3;
+}
+
+h1#headern {
+	flex-basis: 100%;
+	text-align: center;
+	order: -3; 
+}
+
+div#ending1 {
+	flex-basis: 100%;
+	text-align: center;
+	order: 1;
+}
+
+p {
+	text-align: center;
+}
+
+p#farewell, p#opp {
+	background-color: #c3c3c3;
+	margin: 0px;
+	padding: 10px;
+	text-align: left;
+}
+
+p#opp {
+	font-family: "windows bold", sans-serif;
+	text-align: center;
+	letter-spacing: 1px;
+}
